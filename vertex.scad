@@ -87,6 +87,7 @@ module vertex(height, idler_offset, idler_space, fin_w=5, fin_d, fins=0, fn=180)
     	}//fins
 
 
+
     intersection() {
      translate([0, body1_cylinder_offset, 0]) cylinder(r=vertex_radius, h=height, center=true, $fn=fn*2);
      translate([0, body2_cylinder_offset, 0]) rotate([0, 0, 30]) cylinder(r=50, h=height+1, center=true, $fn=6);
@@ -96,6 +97,7 @@ module vertex(height, idler_offset, idler_space, fin_w=5, fin_d, fins=0, fn=180)
      translate([0, 10, 0]) cube([100, 100, 2*height], center=true);
      translate([0, -10, 0]) rotate([0, 0, 30]) cylinder(r=55, h=height+1, center=true, $fn=6);
     }
+
    }
 
 
@@ -164,7 +166,7 @@ module vertex(height, idler_offset, idler_space, fin_w=5, fin_d, fins=0, fn=180)
 
 
 translate([0, 0, extrusion*2.5/2]) 
-vertex(extrusion*2.5, idler_offset=0, idler_space=10, fin_w=5, fin_d=4, fins=0, fn=20 );
+vertex(extrusion*2.5, idler_offset=0, idler_space=10, fin_w=3.8, fin_d=2, fins=0, fn=20 );
 
 //translate([0, 0, 7.5]) vertex_cover(3);
 

@@ -22,8 +22,8 @@ thickness = 4;
 // OpenBeam or Misumi. Currently only 15x15 mm, but there is a plan
 // to make models more parametric and allow 20x20 mm in the future.
 extrusion = 20;
-extrusion_channel_w = 5; //use 3 for 1515
-extrusion_channel_d = 3; //use 3 for 1515
+extrusion_channel_w = 3.8; //フレームの溝の広さ  //use 3 for 1515
+extrusion_channel_d = 2.5; //溝の深さ; //use 3 for 1515
 extrusion_fin_d = 1;
 
 vertex_radius = 42.5; //set to 36 for 1515
